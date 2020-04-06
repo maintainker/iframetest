@@ -1,23 +1,50 @@
 /*reset*/
 
-*{
-    margin: 0;
-    padding: 0;
-}
-body {
-    line-height: 1.2;
-    font-size: 11px;
-    color: #69696B;
-}
-form, img, a, iframe {
-    border-style: none;
-}
-img {
-    vertical-align: top;
-}
-ul li,ul ol {
-    list-style: none;
-}
+*{margin:0;padding:0}
+h2{text-align:left}
+h3{text-align:left}
+h1,h2,h3,h4,h5,h6,strong{font-weight:bold}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+abbr,acronym{border-bottom:1px dotted #000;cursor:help}
+em{font-style:normal}
+ol li{list-style:none}
+ul li{list-style:none}
+li{list-style:none}
+th,td{padding:0}
+th{font-weight:bold;text-align:center}
+fieldset{border:0 none}
+.accessibility,legend{visibility:hidden;overflow:hidden;position:absolute;width:0;height:0;font-size:0}
+caption,.invisible{visibility:hidden !important;overflow:hidden !important;position:static;width:0 !important;height:0 !important;margin:0 !important;padding:0 !important;font-size:0 !important;line-height:0 !important;text-indent:-9999px !important}
+
+input[type=text],input[type=password],textarea{width:12.25em;*width:11.9em}
+label,.btn{cursor:pointer}
+
+.fl{float:left}
+.fr{float:right}
+
+body{margin-left:auto;margin-right:auto;/* font-size:small;  for IE */
+/* font:x-small; /* for IE in quirks mode */
+/* center the page */
+background-color:#fff;font-family:'Malgun Gothic', Dotum,'돋움',AppleGothic,Lucida Grande,Verdana,Arial,Tahoma,sans-serif;font-size:11px;color:#69696B}   /* 20161024 폰트변경 */
+
+/**
+ * Nudge down to get to 13px equivalent for these form elements
+ */
+input,button,textarea{font-family:'Malgun Gothic', Dotum,'돋움',AppleGothic,Lucida Grande,Verdana,Arial,Tahoma,sans-serif;font-size:11px;color:#4D4D4D;vertical-align:middle}/*201303 명도대비 수정*/     /* 20161024 폰트변경 */
+select{font-family:'Malgun Gothic', Dotum,'돋움',AppleGothic,Lucida Grande,Verdana,Arial,Tahoma,sans-serif;font-size:12px;vertical-align:middle}     /* 20161024 폰트변경 */
+input.txt,input.sum,input.sum-f{width:auto;height:18px;margin:-1px 0;padding:0 0 0 5px;border:1px solid #ccc;line-height:18px;color:#4D4D4D}/*201303 명도대비 수정*/
+input.chk{width:13px;height:13px;margin:0 2px 0 0}
+table{border-collapse:collapse;font-size:inherit;font:100%;text-align:left;border-spacing:0}
+pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%}
+a:link{color:#4d4d4d;text-decoration:none}
+a:visited{color:#4d4d4d;text-decoration:none}
+a:hover{color:#4d4d4d;text-decoration:underline}
+a:active{color:#4d4d4d;text-decoration:none}
+a:focus{text-decoration:underline}
+form,img,a,iframe{border-style:none}
+img{vertical-align:top}
+
+
 .hidden{
     visibility: hidden;
     position: absolute;
@@ -66,3 +93,236 @@ nav.top_bnr{
 }
 
 /*header*/
+/*header app down*/
+.header_wrap{position: relative; width: 920px;margin: 0 auto; height: 114px;} 
+.header_wrap .btn_appdown{
+    background:url(https://simage.lotte.com/lotte/images/common/header2015/header_icon.png) no-repeat 0 0;
+    height: 13px;
+    line-height: 11px;
+    position: absolute;
+    top: 11px;
+    left: 0;
+    color: #666;
+    letter-spacing: -1px;
+    padding-left: 15px;
+}
+
+/*header 인사*/
+
+.header_wrap ul.util_list{
+    
+    position: absolute;
+    top: 11px;
+    right: 2px;
+    z-index: 2;
+}
+.header_wrap ul.util_list li.grade_name{
+    background: none;
+    overflow: visible;
+}
+.header_wrap ul.util_list li.grade_name .greeting{
+    float: left;
+    height: 15px;
+    line-height: 11px;
+    margin-right: 3px;
+}
+.header_wrap ul.util_list li.grade_name .grade_box{
+    overflow: visible;
+    position: relative;
+    font-weight: bold;
+    float: left;
+}
+.header_wrap ul.util_list li{
+    background: url(https://simage.lotte.com/lotte/images/common/header2015/line_header_util.gif) no-repeat left 1px;
+    float: left;
+    width: auto;
+    padding: 0 0 0 10px;
+    margin-left: 9px;
+    position: relative;
+}
+.header_wrap .util_list li>a{
+    color: #666;
+    line-height: 11px;
+    letter-spacing: -1px;
+    height: 15px;
+    display: block;
+}
+.header_wrap .util_list li>a .count{
+    padding-left: 3px;
+    font-weight: bold;
+    color: #689bde;
+    position: relative;
+    top: 1px;
+}
+
+.header_wrap .util_list li>a{
+    background-position: 48px -116px;
+    height: 15px;
+    display: block;
+}
+.header_wrap .logo{
+    position: absolute;
+    left: 0;
+    top: 43px;
+}
+.header_wrap .search_box{
+    position: absolute;
+    top: 48px; left: 226px;
+}
+.header_wrap .search_input_wrap{
+    background-position: 0 -260px;
+    width: 467px;
+    background: url(https://simage.lotte.com/lotte/images/common/header2015/header_search_img_op2018.png) no-repeat 0 0;
+    height: 43px;
+    position: relative;
+}
+.header_wrap .search_box .search_input_wrap, .chanel .header_wrap .search_box .search_input_wrap {
+    background-position: 0 -260px;
+    width: 347px;
+}
+.header_wrap .search_box .btn{
+    background: url(https://simage.lotte.com/lotte/images/common/header2015/header_search_img.png) no-repeat 4px -176px;
+    width: 25px;
+    height: 25px;
+    text-indent: -9999px;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+.header_wrap .header_bnr_wrap{
+    width: 316px;
+    height: 60px;
+    position: absolute;
+    top: 43px;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+.header_wrap .header_bnr_wrap ul{
+    position: relative;
+}
+.header_wrap .header_bnr_wrap ul li{
+    height: 60px;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+.header_wrap .header_bnr_wrap ul li .taps{
+    display: none;
+}
+.header_wrap .header_bnr_wrap ul li .cont{
+    width: 316px;
+}
+.header_wrap .header_bnr_wrap ul li .cont a .card_txt{
+    position: absolute;
+    top: 10px;
+    left: 108px;
+    width: 170px;
+    font-size: 12px;
+    color: #fff;
+    overflow: hidden;
+}
+.header_wrap .header_bnr_wrap ul li .cont .card_txt .f1{
+    height: 17px;
+    overflow: hidden;
+}
+.header_wrap .header_bnr_wrap ul li .cont .card_txt .f2{
+    height: 18px;
+    font-size: 15px;
+    overflow: bold;
+}
+.header_wrap .header_bnr_wrap .rn_card_bnr_btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 5;
+}
+.header_wrap .header_bnr_wrap .rn_card_bnr_btn a {
+    display: block;
+    width: 38px;
+    height: 30px;
+    overflow: hidden;
+    background: url(https://simage.lotte.com/lotte/images/common/header2017/rn_card_bnr_btn_icon.png) no-repeat;
+    text-indent: -9999px;
+}
+.header_wrap .header_bnr_wrap .rn_card_bnr_btn a.before {
+    background-position: center 0;
+}
+.header_wrap .header_bnr_wrap .rn_card_bnr_btn a.after {
+    background-position: center -30px;
+}
+
+/*헤더 메뉴*/
+.header_menu_wrap{
+    background-color: #518ddd;
+    position: relative;
+    font-family: 'Malgun Gothic', Dotum,'돋움',AppleGothic,Lucida Grande,Verdana,Arial,Tahoma,sans-serif;
+    z-index: 120;
+    letter-spacing: -1px;
+}
+.header_menu_wrap .header_menu{
+    width: 920px;
+    height: 53px;
+    margin: 0 auto;
+    position: relative;
+}
+.gcb_slim_wrap{
+    position: absolute;
+    top: 0;
+    width: 57px;
+    left: 0;
+    display: block;
+}
+.gcb_slim_wrap {
+    left: -90px;
+}
+.btn_category_view{
+    padding-left: 0;background-position: -1px 0;
+    text-indent: -9999px;
+    font-size: 0;
+    background: url(https://simage.lotte.com/lotte/images/common/header2015/gcb_icon.png) no-repeat 2px 0 #333949;
+    display: block;
+    height: 53px;
+    color: #fff;
+    line-height: 48px;
+}
+.header_menu .menu_wrap {
+    width: 920px;
+    margin: 0 auto;
+}
+.header_menu .menu_wrap .menu_left{
+    padding-left: 0;
+    float: left;
+}
+.header_menu .menu_wrap .menu_left li{
+    margin-right: 43px;
+    float: left;
+    overflow: hidden;
+}
+.header_menu .menu_wrap .menu_left li a{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    height: 53px;
+    line-height: 50px;
+}
+
+.header_menu .menu_wrap .menu_right {
+    background: url(https://simage.lotte.com/lotte/images/common/header2015/line_header_menu.gif) no-repeat left 16px;
+    float: right;
+    padding-left: 1px;
+    margin-right: 90px;
+}
+.header_menu .menu_wrap .menu_right li {
+    float: left;
+    margin-left: 22px;
+}
+.header_menu .menu_wrap .menu_right a{
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    height: 53px;
+    line-height: 50px;
+}
