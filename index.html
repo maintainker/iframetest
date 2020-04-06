@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="onclick()">click</button>
+    
+    <script>
+        const bgDisp = document.createElement("div");
+        let active = false;
+        bgDisp.setAttribute('display','none');
+        const onclick = (e) =>{
+            active? bgDisp.setAttribute('display','none'):bgDisp.setAttribute('display','block');
+            active = !active;
+        }
+        const body = document.querySelector('body');
+        body.append(bgDisp);
+    </script>
+</body>
+</html>
