@@ -34,16 +34,22 @@ input,button,textarea{font-family:'Malgun Gothic', Dotum,'돋움',AppleGothic,Lu
 select{font-family:'Malgun Gothic', Dotum,'돋움',AppleGothic,Lucida Grande,Verdana,Arial,Tahoma,sans-serif;font-size:12px;vertical-align:middle}     /* 20161024 폰트변경 */
 input.txt,input.sum,input.sum-f{width:auto;height:18px;margin:-1px 0;padding:0 0 0 5px;border:1px solid #ccc;line-height:18px;color:#4D4D4D}/*201303 명도대비 수정*/
 input.chk{width:13px;height:13px;margin:0 2px 0 0}
-table{border-collapse:collapse;font-size:inherit;font:100%;text-align:left;border-spacing:0}
+table{border-collapse:collapse;font-size:inherit;font:100%;text-align:left;border-spacing:0;width: 100%;}
 pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%}
 a:link{color:#4d4d4d;text-decoration:none}
 a:visited{color:#4d4d4d;text-decoration:none}
 a:hover{color:#4d4d4d;text-decoration:underline}
 a:active{color:#4d4d4d;text-decoration:none}
 a:focus{text-decoration:underline}
+table a {font-size: 12px;}
 form,img,a,iframe{border-style:none}
 img{vertical-align:top}
-
+.datatable th{
+    padding-left: 15px;
+    font-weight: normal;
+    color: #898989;
+    text-align-last: left;
+}
 
 .hidden{
     visibility: hidden;
@@ -312,7 +318,6 @@ nav.top_bnr{
     background: url(https://simage.lotte.com/lotte/images/common/header2015/line_header_menu.gif) no-repeat left 16px;
     float: right;
     padding-left: 1px;
-    margin-right: 90px;
 }
 .header_menu .menu_wrap .menu_right li {
     float: left;
@@ -325,4 +330,411 @@ nav.top_bnr{
     color: #fff;
     height: 53px;
     line-height: 50px;
+}
+
+
+/*헤더 아래 history& 이전페이지*/
+.location {
+    position: relative;
+    z-index: 11;
+    width: 920px;
+    min-height: 22px;
+    margin: 0 auto;
+    padding: 14px 0 9px;
+}
+.location .history{
+    float: left;
+    width: 675px;
+    font-size: 12px;
+}
+.location .history .home{
+    float: left;
+    width: 0;
+    height: 21px;
+    padding: 0 0 0 18px;
+    background: url(https://simage.lotte.com/lotte/images/common/icon/icon_nav01_new.gif) 0 center no-repeat;
+    line-height: 21px;
+}
+.location .history .home a{
+    text-indent: -9999px;
+    display: inline-block;
+    width: 18px;
+    height: 21px;
+    position: relative;
+    left: -18px;
+}
+.location .history .history_list_wrap{
+    float: left;
+    width: 632px;
+}
+.location .history .history_list_wrap li{
+    float: left;
+    position: relative;
+    margin: 0 0 5px;
+    padding: 0 0 0 14px;
+    background: url(https://simage.lotte.com/lotte/images/common/header_2012/icon_history_depth.gif) no-repeat 6px center;   
+}
+.location .history .history_list_wrap li .selectbox{
+    padding: 0 26px 0 2px;
+    bottom: 0;line-height: 22px;
+    background-color: #fff;
+}
+.location .history .history_list_wrap li .selectbox a{
+    white-space: nowrap;
+    font-size: 12px;
+    color: #333;
+}
+.location .history .history_list_wrap li .selectbox .btn_more{
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 1px;
+    width: 19px;
+    height: 19px;
+    background: #fff url(https://simage.lotte.com/lotte/images/category_2014/select_history_new.gif) no-repeat right center;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+.location .prev_place{
+    position: absolute;
+    right: 0;
+}
+/*주문페이지*/
+#container{
+    width: 920px;
+    min-height: 210px;
+    margin: 0 auto;
+    padding: 0 0 25px;
+}
+#container .order{
+    padding-top: 28px;
+    position: relative;
+}
+#container .order_sheet{
+    width: 660px;
+}
+#container .order_sheet h4{
+    height: 28px;
+    margin-top: 50px;
+}
+
+/*cart list 1.주문하시는 상품*/
+
+.cart_list{
+    background: url(https://simage.lotte.com/lotte/images/order/bg_cartlist.gif) repeat-x;
+    border-top: 2px solid #2e70d1;
+    table-layout: fixed;
+    margin-top: -2px;
+}
+.cart_list th{
+    height: 32px;
+    background: url(https://simage.lotte.com/lotte/images/order/bg_th.gif) no-repeat left 7px;
+    font-weight: normal;
+    line-height: 32px;
+    color:#76787b;
+}
+.cart_list td{
+    padding: 15px 0;
+    border-bottom: 1px solid #ededed;
+    background: none;
+    line-height: 16px;
+    text-align: center;
+}
+.cart_list .first{
+    padding-left: 7px;
+    background: none;
+}
+.cart_list .thumb2{
+    width: 43px;
+    height: 43px;
+    border: 1px solid #cbcbcb;
+}
+.cart_list .prd_txt{
+    min-height: 43px;
+    margin: -45px 0 0 60px;
+}
+.cart_list .first {
+    padding-left: 7px;
+    background: none;
+    text-align: left;
+    text-align: center;
+}
+.cart_list .prd_info {
+    padding: 27px 5px 20px 5px;
+    text-align: left;
+    vertical-align: top;
+}
+.cart_list .prd_info .pname {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.cart_list .prd_info ul.option {
+    margin-top: 3px;
+}
+.cart_list .prd_info ul.option li {
+    background: url(https://simage.lotte.com/lotte/images/order/blt4.gif) no-repeat left 7px;
+    padding-left: 8px;
+    color:#4667d6;
+}
+.cart_list .prd_info .picon {
+    margin-top: 6px;
+}
+.cart_list .prd_qty{
+    font-size: 12px;
+    color:#393939;
+}
+.cart_list .prd_sum{
+    padding-right: 15px;
+    background: url(https://simage.lotte.com/lotte/images/order/dline_v1.gif) repeat-y left top;
+    font-size: 12px;
+    font-weight: bold;
+    color: #cd3800;
+    text-align: right;
+}
+.cart_list .delivery{
+    background: url(https://simage.lotte.com/lotte/images/order/dline_v1.gif) repeat-y left top;
+}
+
+/*2.할인수단 선택*/
+.order h4{
+    height: 28px;
+    margin-top: 50px;
+}
+.order .max_discount_chk{
+    height: 23px;
+    margin-top: -23px;
+    color: #4667d6;
+    text-align-last: left;
+    margin-left: 171px;
+}
+input.chk{
+    margin-bottom: 1px;
+    position: relative;
+    top: -1px;
+    margin-right: 5px;
+    width: 13px;
+    height: 13px;
+    margin: 0 2px 0 0;
+}
+.order .max_discount_chk label{
+    font-size: 12px;
+    font-weight: bold;
+}
+.datatable{
+    border-top: 2px solid #4e70d1;
+    border-collapse: separate;
+}
+.discount_tb1{
+    position: relative;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #aaa;
+}
+.discount_tb1 th{
+    padding: 5px 0 3px 14px;
+    border-right: 1px solid #d7d7d7;
+}
+.discount_tb1 td{
+    padding: 5px 5px 3px 10px;
+    vertical-align: top;
+}
+.discount_tb1 .discount_txt{
+    background-color: #f7f7f7;
+    color:#555;
+    padding: 9px 5px 9px 10px;   
+}
+.discount_tb1 .discount_sum{
+    padding: 16px 0 16px 11px;
+    color:#69696b;
+}
+.discount_tb1 .discount_sum strong {
+    color: #4667d6;
+}
+.discount_tb1 .discount_sel{
+    padding: 13px 10px 13px 0;
+    color: #666;
+    text-align: left;
+}
+.discount_tb1 .discount_sel select{
+    color: #393939;
+    border: 1px solid #707070;
+    font-size: 11px;
+    width: 100%;
+}
+.discount_tb1 .discount_note{
+    background: url(https://simage.lotte.com/lotte/images/order/dline_v1.gif) repeat-y left top;
+    padding: 16px 6px 16px 10px;
+    color: #888;
+    word-break: break-all;
+}
+.discount_tb1 .discount_total_txt{
+    background-color: #f2f4ff;
+    font-weight: bold;
+    color: #69696b;
+    text-align-last: left;
+    padding: 16px 12px;
+    font-size: 12px;
+}
+.discount_tb1 .discount_total{
+    background: #f2f4ff;
+    font-weight: normal;
+    text-align: right;
+    padding: 16px 22px;
+    font-size: 12px;
+}
+.discount_tb1 .discount_total strong {
+    color: #4667d6;
+}
+.datatable .hline th, .datatable .hline td,  .datatable .span_lt_point_amt td,  .datatable .span_lt_point_amt th{
+    border-top: 1px solid #d7d7d7;
+    padding: 5px 5px 3px 10px;
+}
+.datatable .hline th, .datatable .hline td .chk {
+    position: static;
+    top: auto;
+}
+/*3. 주문고객 배송지 정보*/
+.odrinfo_tb1 .first{
+    padding-top: 8px;
+    vertical-align: top;
+}
+.gift_bot {
+    border-bottom: 1px solid #aaaaaa;
+}
+.odrinfo_tb1 th{
+    padding-top: 5px;
+}
+.odrinfo_tb1 td {
+    padding: 6px 10px 5px;
+    color: #666;
+}
+.odrinfo_tb1 .customer_info{
+    padding: 7px 10px 6px;
+}
+.odrinfo_tb1 .customer_info * {
+    font-size: 12px;
+}
+.odrinfo_tb1 .customer_info em{
+    margin-left: 30px;
+    padding-left: 8px;
+    background: url(https://simage.lotte.com/lotte/images/order/blt3.gif) no-repeat left 4px;
+}
+.datatable .hline2 th,.datatable .hline2 td{
+    background-color: #f2f4ff;
+    border-bottom: 1px solid #d7def8;
+    border-top: 1px solid #d7def8;
+}
+.odrinfo_tb1 .btn_right {
+    text-align: right;
+    vertical-align: top;
+    padding-left: 0;
+}
+.datatable tbody tr td .self_number{
+    letter-spacing: -1px;
+    color: #4667d6 !important;
+}
+.datatable tbody tr td .self_number_btn{
+    position: relative;
+    top: 2px;
+}
+
+/*픽업지점찾기*/
+.grs{
+    background: #f7f7f7;
+    padding: 9px 0 9px 20px;
+    margin-top: 10px;
+    line-height: 20px;
+    color:#666;
+    position: relative;
+}
+.grs .btn_sel{
+    display: block;
+    text-align: right;
+    padding-right: 20px;
+    position: absolute;
+    top: 22px;
+    right: 0;
+}
+
+/*4.결제정보 선택*/
+.payment_next_add{
+    height: 23px;
+    color:#4667d6;
+    text-align-last: left;
+    margin: -23px 0 0 164px;
+}
+.btn_pop_release{
+    height: 25px;
+    margin-top: -25px;
+    text-align: right;
+}
+.pay_sel_box{
+    margin-bottom: 30px;
+    border-top: 2px solid #4e70d1;
+    border-bottom: 1px solid #d7def7;
+    margin-top: 9px;
+}
+.pay_select {
+    padding-bottom: 10px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.simple_pay{
+    border-bottom: 1px solid #d7def8;
+}
+.pay_select .pay_sel{
+    height: 22px;
+    padding: 20px 0 0;
+    text-align: left;
+}
+.pay_select .pay_sel_v3 li{
+    padding: 0 13px;
+    display: inline;
+}
+.pay_title{
+    float: left;
+    width: 110px;
+    text-align: center;
+    font-size: 12px;
+    color: #898989;
+    height: 22px;
+}
+.normal_pay{
+    border-top: 0;
+}
+
+/*Lpay 간편결제*/
+.pay_info{
+    width: 660px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.pay_info h3{
+    height: 22px;
+    background: url(https://simage.lotte.com/lotte/images/customer/bg_payinfo.gif) repeat-x left bottom;
+    font-size: 12px;
+    color: #4667d6;
+}
+.pay_info table{
+    float: left;
+    width: 398px;
+    border-bottom: 1px solid #aaa;
+    color: #888;
+}
+.pay_info .first th, .pay_info .first td{
+    border-top: none !important;
+}
+.pay_info th {
+    padding-top: 13px;
+    border-right: 1px solid #D8D8D8;
+    font-weight: normal;
+}
+.pay_info th, .pay_info td{
+    padding: 10px 0 8px 10px;
+    border-top: 1px solid #d8d8d8;
+    color: #888;
+    text-align-last: left;
+    vertical-align: top;
+}
+.pay_info td{
+    line-height: 15px;
 }

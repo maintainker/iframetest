@@ -98,5 +98,368 @@
             </div>
         </div>
     </nav>
+    <section class="location">
+        <div class="history">
+            <p class="home"><a href="#">홈</a></p>
+            <ul class="history_list_wrap">
+                <li class="depth1">
+                    <p class="selectbox mall">
+                        <a href="#">롯데닷컴</a>
+                        <a href="#" class="btn_more">다른몰 리스트 펼치기</a>
+                    </p>
+                    <div class="sub_list_wrap"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="prev_place">
+            <div class="prev_page">
+                <a href="#">
+                    <img src="https://simage.lotte.com/lotte/images/common/header/preview.gif" alt="이전페이지">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="container">
+        <div class="order">
+            <div class="order_step">
+                <h3>
+                    <img src="https://simage.lotte.com/lotte/images/order/step2.gif" alt="2.주문서작성/결제 : 배송/결제 정보를 정확히 입력해 주세요. (1.장바구니 2.주문서작성/결제 3.주문접수/완료)">
+                </h3>
+            </div>
+            <div class="order_sheet">
+                <h4><img src="https://simage.lotte.com/lotte/images/order/h2_order1.gif" alt="1.주문하시는상품"></h4>
+                <table summery="주분상품정보에 관한 표로써, 상품정보, 수량, 소계, 배송정보등의 정보를 제공합니다." class="cart_list">
+                    <caption>주문상품정보</caption>
+                    <colgroup>
+                        <col>
+                        <col style="width:8%;">
+                        <col style="width:16%;">
+                        <col style="width:16%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="first">상품정보</th>
+                            <th scope="col">수량</th>
+                            <th scope="col">소계</th>
+                            <th scope="col" class="last">배송정보</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="prd_info">
+                                <a href="#" >
+                                    <img class="thumb2" src="https://simage.lotte.com/goods/39/96/25/24/7/724259639_1_60.jpg" alt="김사랑 콜라겐">
+                                </a>
+                                <div class="prd_txt">
+                                    <p class="pname">
+                                        <a href="#">
+										[3박스]김사랑 에버콜라겐 타임 저분자콜라겐 3박스(1박스:3g*30포)
+                                        </a>
+                                    </p>
+                                    <ul class="option"><li>단일상품:단일상품</li></ul>
+                                    <p class="picon"><img src="https://simage.lotte.com/lotte/images/order/ico_no_bankbook.gif" alt="무통장결제불가"></p>
+                                </div>
+                            </td>
+                            <td class="prd_qty">1</td>
+                            <td class="prd_sum">119,000원</td>
+                            <td class="delivery"><span>3일이내발송</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4>
+                    <img src="https://simage.lotte.com/lotte/images/order/h2_order2.gif" alt="2.할인수단선택">
+                </h4>
+                <p class="max_discount_chk">
+                    <input type="checkbox" class="chk" checked="checked"/>
+                    <label for="max_dc">최대할인적용</label>
+                </p>
+                <table summery="할인수단선택에 관한 표로써, 쿠폰/카드할인,포인트/보관금사용,포인트적립 등의 정보를 제공합니다." class="datatable discount_tb1">
+                    <caption>할인수단 선택</caption>
+                    <colgroup>
+                        <col width="110">
+                        <col width="207">
+                        <col width="152">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>쿠폰 / 카드 할인</th>
+                            <td colspan="3" style="padding: 0;">
+                                <table summery="쿠폰 / 카드 할인혜택 선택">
+                                    <caption>쿠폰 / 카드 할인혜택 선택</caption>
+                                    <colgroup>
+                                        <col width="148"/>
+                                        <col width="210"/>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="discount_txt" colspan="3">* 할인 적립혜택은 중복으로 사용할 수 없습니다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="discount_sum">
+                                                <span class="price">할인(-<strong>20,700</strong>원)</span>
+                                            </td>
+                                            <td class="discount_sel">
+                                                <select name="coupon" prevoptionid="12">
+                                                    <option value="N" optionid = "N">선택안함</option>
+                                                    <option value="0" optionid = "12" selected ="selected">즉석쿠폰(할인)(20,700)원</option>
+                                                    <option value="1" optionid = "10_0">롯데카드(6,900)원</option>
+                                                </select>
+                                            </td>
+                                            <td class="discount_note">
+                                                <div id="RIGHT_12" group="costSale">
+                                                    <ul>
+                                                        <li>에버콜라겐 코큐CoQ 84정 x 3병 15% 할인
+                                                            <a href="#"><img src="https://simage.lotte.com/lotte/images/order/ico_help.gif" alt="도움말(즉석쿠폰 안내)"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="discount_total_txt" colspan="2">할인받은 금액</td>
+                                            <td class="discount_total"><span class="price" id="bene_dctot_amt"><strong>-20,700</strong>원</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="hline">
+                            <th scope="row" rowspan="2">포인트 / 보관금</th>
+                            <td class="discount_sel">
+                                <input type="checkbox" name="chk_point" class="chk" id="chk_lpoint"/>
+                                <label for="chk_lpoint">L-money</label> (
+                                <input type="checkbox" name="chk_point_all" class="chk" id="chk_lpoint_all" disabled/>
+                                <label for="chk_lpoint_all">전액사용)</label>
+                            </td>
+                            <td class="discount_sum"><input type="text" id="lpoint_amt" class="sum" value="0" readonly/>점</td>
+                            <td class="discount_note">
+                                /0점 사용가능
+                                <a href="#" class="btn_click_prv">
+                                    <img src="https://simage.lotte.com/lotte/images/order/ico_help.gif" alt="도움말(L-money 안내)"/>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="span_lt_point_amt">
+                            <td class="discount_sel">
+                                <input type="checkbox" name="chk_point" class="chk" id="chk_lt_point"/>
+                                <label for="chk_lt_point">L-point</label> (
+                                <input type="checkbox" name="chk_point_all" class="chk" id="chk_lt_point_all" disabled/>
+                                <label for="chk_lt_point_all">전액사용)</label>
+                            </td>                            
+                            <td class="discount_sum"><input type="text" id="lpoint_amt" class="sum" value="0" readonly/>점</td>
+                            <td class="discount_note">
+                                /0점 사용가능
+                                <a href="#" class="btn_click_prv">
+                                    <img src="https://simage.lotte.com/lotte/images/order/ico_help.gif" alt="도움말(L-money 안내)"/>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4>
+                    <img src="https://simage.lotte.com/lotte/images/order/h2_order3.gif" alt="3.주문고객/배송지 정보"/>
+                </h4>
+                <table summery="회원주문정보에 관한 표로써, 주문하시는분, 보내시는분 등의 정보를 제공합니다." class="datatable odrinfo_tb1 gift_bot">
+                    <caption>회원 주문정보</caption>
+                    <colgroup>
+                        <col style="width: 25%;"/>
+                        <col style="width: 50%;"/>
+                        <col style="width: 25%;"/>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="first">주문하시는 분</th>
+                            <td colspan="2" class="customer_info">
+                                <strong>NSCH</strong>
+                                <span>(보내시는 분 : NSCH <a href="#" class="btn_click_prv"><img src="https://simage.lotte.com/lotte/images/order/btn_modify.gif" class="btn" alt="수정(보내시는 분)"></a> )</span>
+                                <em>02-6951-3999</em>
+                                <em>https://www.nshc.net/</em>
+                            </td>
+                        </tr>
+                        <tr id="tr_delvp_sel_s" class="hline2">
+                            <th scope="row">배송지 선택</th>
+                            <td>
+                                <ul><li>
+                                    <input type="radio" name="dlvp_sn_0" id="dlvp_sn_0" class="chk" checked="checked">
+                                    <label id="label_dlvp_chk_0" name="label_dlvp_chk_0" class="chk" for>회사</label>
+                                </li></ul>
+                            </td>
+                            <td class="btn_right">
+                                <a href="#"><img src="https://simage.lotte.com/lotte/images/order/btn_delivery_new.gif" alt="새배송지 입력"></a>
+                                <a href="#"><img src="https://simage.lotte.com/lotte/images/order/btn_delivery_mng.gif" alt="내배송지 관리-새창"></a>
+                            </td>
+                        </tr>
+                        <tr id="td_rmit_nm_disp" >
+                            <th scope="row">받으시는 분</th>
+                            <td colspan="2">
+                                <em>[회사] NSHC - 기본배송지</em>
+                                <span><a href="#"><img src="https://simage.lotte.com/lotte/images/order/btn_modify.gif" alt="수정"></a></span>
+                            </td>
+                        </tr>
+                        <tr id="td_cbl_tel_disp">
+                            <th scope="row">연락처</th>
+                            <td colspan="2">
+                                <em>02-6951-3999</em>
+                            </td>
+                        </tr>
+                        <tr id="td_cell_sct_disp">
+                            <th scope="row">휴대폰</th>
+                            <td colspan="2">
+                                <em>010-1234-5678</em>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scpoe="row">안심번호 서비스</th>
+                            <td colspan="2">
+                                <span class="self_number">☎ 롯데닷컴은 고객님의 개인정보 보호를 위해 안심번호 서비스를 제공하고 있습니다.<a href="#" class="self_number_btn"><img src="https://simage.lotte.com/lotte/images/order/ico_help.gif" alt="안심번호 도움말"/></a></span>
+                            </td>
+                        </tr>
+                        <tr id="td_addr_disp">
+                            <th scope="row">주소</th>
+                            <td colspan="2">
+                                <em alt="도로명주소">서울 금천구 가산디지털1로 186</em>
+                            </td>
+                        </tr>
+                        <tr id="td_stnm_addr_disp">
+                            <th scope="row"></th>
+                            <td colspan="2">
+                                <em alt="지번주소">서울특별시 금천구 가산동 459-11 제이플라츠8층</em>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">배송메세지</th>
+                            <td colspan="2">
+                                <input type="text" style="width:495px;margin-bottom:3px" title="배송메세지" value="택배기사님께 전달할 메시지를 20자이내로 입력해주세요." readonly>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="grs">
+                    내 주변 가까운 매장으로 주문한 상품을 배송받아 안전하게 픽업이 가능한 상품입니다.<br/>
+                    * 픽업가능 매장 : 세븐일레븐/하이마트/롯데슈퍼/롯데리아
+                    <a href="#" class="btn_sel"><img src="https://simage.lotte.com/lotte/images/order/btn_store_sear_new.gif" alt="픽업 지점 찾기"></a>
+                </div>
+                <h4>
+                    <img src="https://simage.lotte.com/lotte/images/order/h2_order4.gif" alt="4.결제정보 선택">
+                </h4>
+                <div class="payment_next_add">
+                    <input type="checkbox" name="payNextUseYn" id="payNextUseYn"/>
+                    <label for="payNextUseYn">지금 선택한 결제수단을 다음에도 사용</label>
+                </div>
+                <p class="btn_pop_release">
+                    <a href="#">
+                        <img src="https://simage.lotte.com/lotte/images/order/btn_popclear.gif" alt="팝업차단해제방법">
+                    </a>
+                </p>
+                <div id="div_pay_sel_box_base" class="pay_sel_box">
+                    <div class="pay_select simple_pay">
+                        <ul class="pay_sel pay_sel_v3">
+                            <li class="pay_title">간편결제</li>
+                            <li class="Lpay">
+                                <input type="radio" id="rd_sttl_sel_lpay" class="chk" checked="checked"/>
+                                <label for="rd_sttl_sel_lpay"><img src="https://simage.lotte.com/lotte/images/order/logo_Lpay_icon.png" alt="L.pay 간편결제">간편결제</label>
+                            </li>
+                            <li class="naverPay">
+                                <input type="radio" id="rd_sttl_sel_naverPay" disabled/>
+                                <label for="rd_sttl_sel_naverPay">네이버페이</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pay_select normal_pay">
+                        <ul class="pay_sel pay_sel_v3">
+                            <li class="pay_title">일반결제</li>
+                            <li>
+                                <input type="radio" id="rd_sttl_sel_cash" disabled>
+                                <label for="rd_sttl_sel_crdt">신용카드</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="rd_sttl_sel_cash" disabled>
+                                <label for="rd_sttl_sel_crdt">현금</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="rd_sttl_sel_phone" disabled>
+                                <label for="rd_sttl_sel_phone">휴대폰결제</label>
+                            </li>
+                            <li class="combo">
+                                <input type="radio" id="rd_sttl_sel_cmplx" disabled>
+                                <label for="rd_sttl_sel_cmplx">복합결제(카드/현금)</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="banner_orderpay"><p><a href="#"><img src="https://simage.lotte.com/upload/display/corner/5525717_40855_38444_30_13007932_1004_20200406131600.jpg" alt="4/7 삼성"></a></p></div>
+                <div id="div_card" class="pay_info">
+                    <span id="pay_info_smartpay_title">
+                        <h3>L.pay 간편결제</h3>
+                    </span>
+                    <table summery="신용카드 결제정보에 대한 표로써, 카드종류 등의 정보를 제공합니다.">
+                        <caption>신용카드 결제정보</caption>
+                        <colgroup>
+                            <col style="width: 18%;"/>
+                            <col/>
+                        </colgroup>
+                        <tbody>
+                            <tr class="first">
+                                <th scope="row">카드종류</th>
+                                <td>
+                                    <select name="iscm_cd" style="width:185px" id="iscm_dc" title="카드선택">
+                                    <option value>카드선택</option>
+                                    </select>
+                                    <a href="#" id="btn_Lpay_card_add"><span>+결제수단 추가 등록</span></a>
+                                    <div id="selectCardInfo">
+                                        <ul>
+                                            <div id="onSmartpayCheckReTxt">
+                                                <li>* 롯데/신한/현대/삼성카드만 이용 가능</li>
+                                                <li>
+                                                    * 신청하시는 '신용카드의 명의자'와 SMS인증번호를 <br/>
+                                                    &nbsp;&nbsp;받으시는 '휴대폰 명의자'가 동일해야 합니다 <br/>
+                                                    &nbsp;&nbsp;(삼성카드는 '롯데닷컴 ID명의자'도 동일해야 함)
+                                                </li>
+                                                <li style="margin-top: 10px;">* 포인트연계할부서비스 이용은 카드결제 창에서 신청</li>
+                                            </div>
+                                            <div>
+                                                <li style="color:blue;">*별도의 앱 설치없이 L.pay 이용이 가능합니다.</li>
+                                                <li>*1번 등록으로 롯데 어디에서나 쓸 수 있는 간편결제입니다.</li>
+                                                <li>*더욱 안전한 쇼핑을 위해 결제 비밀번호를 확인하도록 개선되었습니다. (빠른결제 이용불가)</li>
+                                            </div>
+                                        </ul>
+                                        <ul class="ul_card_rdiscount" id="ul_card_rdiscount01">
+                                            <li id="card_discount n20170407-no-discount-txt">
+                                                <p>
+                                                    <strong>
+                                                        삼성카드<em>70,000원 이상</em> 결제 시 <em>추가 5%</em> 청구할인
+                                                    </strong><br/>
+                                                    (단, 개인별 1일 할인한도 최대 100,000원)  
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr name="tr_inst_sel" id="tr_inst_sel">
+                                <th scope="row">할부선택</th>
+                                <td id="td_inst_rdo" class="card_install" style="display: table-cell;">
+                                    <input type="radio" id="rd_inst_sngl" name="rd_inst_sngl" value="one" class="chk" checked readonly>
+                                    <label for="rd_inst_sngl">일시불</label>
+                                    <input type="radio" id="rd_inst_free" name="rd_inst_free" value="free" class="chk" disabled>
+                                    <label for="rd_inst_free">무이자할부</label>
+                                    <input type="radio" id="rd_inst_intr" name="rd_inst_intr" value="normal" class="chk" disabled>
+                                    <label for="rd_inst_intr">일반 할부</label>
+                                </td>
+                            </tr>
+                            <tr name="tr_inst_term" id="tr_inst_term">
+                                <th id="th_inst_mm_cnt" name="th_inst_mm_cnt" scope="row">할부기간</th>
+                                <td id="td_inst_mm_cnt" name="td_inst_mm_cnt">
+                                    <select name="sel_inst_mm_cnt" id="sel_inst_mm_cnt">
+                                        <option value="0">일시불</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
