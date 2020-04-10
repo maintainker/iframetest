@@ -12,7 +12,7 @@ ul li{list-style:none}
 li{list-style:none}
 th,td{padding:0}
 th{font-weight:bold;text-align:center}
-fieldset{border:0 none}
+fieldset{border:0;}
 .accessibility,legend{visibility:hidden;overflow:hidden;position:absolute;width:0;height:0;font-size:0}
 caption,.invisible{visibility:hidden !important;overflow:hidden !important;position:static;width:0 !important;height:0 !important;margin:0 !important;padding:0 !important;font-size:0 !important;line-height:0 !important;text-indent:-9999px !important}
 
@@ -25,7 +25,7 @@ label,.btn{cursor:pointer}
 body{margin-left:auto;margin-right:auto;/* font-size:small;  for IE */
 /* font:x-small; /* for IE in quirks mode */
 /* center the page */
-background-color:#fff;font-family:'Malgun Gothic', Dotum,'돋움',AppleGothic,Lucida Grande,Verdana,Arial,Tahoma,sans-serif;font-size:11px;color:#69696B}   /* 20161024 폰트변경 */
+background-color:#fff;font-family:'Malgun Gothic', Dotum,'돋움',AppleGothic,Lucida Grande,Verdana,Arial,Tahoma,sans-serif;font-size:11px;color:#69696B;position: relative;}   /* 20161024 폰트변경 */
 
 /**
  * Nudge down to get to 13px equivalent for these form elements
@@ -36,6 +36,14 @@ input.txt,input.sum,input.sum-f{width:auto;height:18px;margin:-1px 0;padding:0 0
 input.chk{width:13px;height:13px;margin:0 2px 0 0}
 table{border-collapse:collapse;font-size:inherit;font:100%;text-align:left;border-spacing:0;width: 100%;}
 pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%}
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    visibility: visible;
+    cursor: pointer;
+}
+
 a:link{color:#4d4d4d;text-decoration:none}
 a:visited{color:#4d4d4d;text-decoration:none}
 a:hover{color:#4d4d4d;text-decoration:underline}
@@ -737,4 +745,469 @@ input.chk{
 }
 .pay_info td{
     line-height: 15px;
+}
+.pay_info .scroll{
+    overflow-y: scroll;
+    width: 230px;
+    margin-top: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    font-size: 11px;
+    color: #888;
+}
+#div_card ul{
+    min-height: 45px;
+}
+.pay_info .scroll ul li{
+    padding-left: 8px;
+    background: url(https://simage.lotte.com/lotte/images/order/blt1.gif) no-repeat 2px 5px;
+    line-height: 15px;
+}
+.order_sheet .card_interest_free01{
+    margin-top: 0;
+    padding-top: 30px;
+}
+.order_sheet .card_interest_free01 h5{
+    height: 20px;
+}
+.order_sheet .card_interest_free01 .note1{
+    height: 16px;
+    margin-top: -16px;
+    text-align: right;
+}
+.order_sheet .card_interest_free01 .box{
+    border: 4px solid #e8e8e8;
+}
+.order_sheet .card_interest_free01 .box th, .order_sheet .card_interest_free01 .box td{
+    padding: 15px 0;
+    vertical-align: top;
+}
+.order_sheet .card_interest_free01 .box th{
+    width: 70px;
+    text-align-last: left;
+}
+.order_sheet .card_interest_free01 .box th img{
+    margin-left: 5px;
+}
+.order_sheet .card_interest_free01 .box td{
+    width: 145px;
+    color: #898989;
+}
+.order_sheet .card_interest_free01 td li span{
+    width: 77px;
+    display: inline-block;
+    padding-right: 2px;
+    text-align: right;
+}
+.card_interest_free01 .note2{
+    line-height: 15px;
+}
+.card_interest_free01 .note2 em{
+color: #393939;
+}
+
+/*lpay 자세히보기*/
+.order_smartpay{
+    padding-top: 50px;
+}
+
+/*order confirm*/
+#payConfirmBox{
+    position: absolute;
+    right: 0;
+    top: 158px;
+    z-index: 9;
+}
+.order_confirm{
+    float: right;
+    width: 242px;
+    color: #888;
+    text-align: right;
+}
+#container .order_sheet .order_confirm .calculators_h4{
+    margin-top: 0;
+    height: 35px;
+}
+.order_confirm .box{
+    overflow: hidden;
+    width: 222px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 5px solid #4e70d1;
+}
+.order_confirm th, .order_confirm  td{
+    text-align: right;
+}
+.order_confirm td {
+    padding-right: 10px !important;
+}
+.order_confirm .odr_sum th{
+    padding: 3px 0 2px;
+    color: #888;
+    width: 125px;
+}
+.order_confirm .odr_sum th, .order_confirm .odr_sum td{
+    padding: 10px 0 7px;
+    background: #e6ebfa;
+    font-size: 12px;
+    color: #1f409f;
+}
+.order_confirm .hline_b th {
+    width: 125px;
+    font-weight: normal;
+}
+.order_confirm .hline_b th, .order_confirm .hline_b td {
+    padding-top: 7px;
+}
+.order_confirm .pay_total
+{
+    margin-top: 7px;
+    padding: 10px;
+    border-top: 2px solid #4e70d1;
+    line-height: 16px;
+}
+.order_confirm .pay_total2{
+    padding-top: 23px;
+    padding-bottom: 2px;
+}
+.order_confirm .pay_total2 p{
+    margin-bottom: 0;
+    line-height: .5;
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+}
+.order_confirm .pay_total2 p span{
+    font-size: 12px;
+    color: #e75900;
+}
+.order_confirm .pay_total2 p strong{
+    font: 30px verdana;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+.pay_total.pay_total2.pay_txt_align{
+    border-top: 1px solid #ececec;
+    padding: 10px;
+    padding-top: 24px;
+    padding-bottom: 8px;
+}
+.order_confirm .pay_recipient{
+    margin-top: 4px;
+    padding: 7px;
+    background-color: #eee;
+    text-align: center;
+}
+.order_confirm .order_assent.assent_all_wrap {
+    padding-bottom: 6px;
+}
+.order_confirm .order_assent{
+    border: 1px solid #aaa;
+    margin-bottom: 6px;
+    text-align: left;
+}
+.order_confirm .order_assent .first{
+    background-color: #f2f5ff;
+    padding: 9px 10px 5px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: bold;
+    color: #393939;
+    letter-spacing: -0.06em;
+    overflow: hidden;
+}
+.order_confirm .order_assent .nth_wrap{
+    margin-bottom: 7px;
+    font-size: 11px;
+}
+.order_confirm .order_assent .nth_wrap p{
+    letter-spacing: -0.04em;
+    line-height: 15px;
+    text-align: left;
+}
+.order_confirm .order_assent .nth1{
+    color: #888;
+    margin: 2px 0 0;
+    padding: 8px 10px 3px;
+}
+.order_confirm .order_assent .nth1 label{
+    color: #393939;
+    font-size: 12px;
+    position: relative;
+    top: 1px;
+}
+.order_confirm .order_assent .nth2{
+    margin: 4px 0 0 16px;
+    color: #888;
+}
+.order_confirm .order_assent a {
+    display: block;
+    border: 1px solid #e3e3e3;
+    padding: 0px 3px;
+    width: 43px;
+    line-height: 16px;
+    margin-left: 15px;
+    width: 44px;
+}
+
+
+
+/* popup용 */
+#container_popup{position: relative;}
+#wrapper{
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
+    min-height: 400px;
+    position: relative;
+}
+#wrapper #header{
+    min-height: 45px;
+    position: relative;
+    z-index: 1000001;  
+    display: block;  
+}
+#wrapper #header .inwrap{
+    min-height: 16px;
+}
+.head_prev{
+    position: inherit;
+    float: left;
+    margin: 9px 0 0 5px;
+    left: 12px;
+    top: 17px;
+}
+.head_prev a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(https://web.lpay.com:1452/resources/images/common/headbtn_prevB.png) no-repeat 50% 50%;
+    background-size: 20px;
+    
+}
+.blind, caption, legend {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -5000em;
+}
+.inwrap h1 {
+    text-align: left;
+    border-bottom: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.head_tit {
+    float: left;
+    margin-left: 20px;
+    padding-left: 15px;
+    padding-top: 17px;
+    line-height: 16px;
+    background: url(../images/icon/bul_titB.png) no-repeat 0 20px;
+    background-size: 6px;
+}
+
+.head_prev, .head_tit{
+    margin-left: 5px;
+    padding-left: 0;
+    background: none;
+}
+.head_tit .head_caution .caution {
+    text-indent: -9999em;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-top: -3px;
+    background: url(https://web.lpay.com:1452/resources/images/icon/ico_caution.png) no-repeat 50% 50%;
+    background-size: 14px;
+}
+.head_close{
+    right: 0;top: 3px;
+    position: absolute;
+}
+.head_close a{
+    display: block;
+    width: 23px;
+    height: 23px;
+    padding: 10px;
+    background: url(https://web.lpay.com:1452/resources/images/common/headbtn_closeB.png) no-repeat 50% 50%;
+    background-size: 17px;
+}
+.conarea{
+    padding: 0 20px;
+    margin-bottom: 75px;
+}
+.cardul .focusline{
+    border-bottom: 1px solid #dbdbdb;
+}
+.cardul.addul {
+    padding-top: 0;
+}
+.cardul > li{
+    height: 70px;
+}
+.cardul > li strong{
+    padding: 17px 0 4px;
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+.label, .label label {
+    display: inline-block;
+    font-size: 14px;
+    color: #555;
+}
+.inpbox{position: relative;}
+.cardul.addul > li .inp_txt {
+    border-bottom: none !important;
+}
+.cardul > li .inp_txt {
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    color: #333;
+    line-height: 30px;
+}
+.inpbox .inp_txt {
+    border: 0 !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 30px;
+    padding: 0;
+    color: #333;
+    z-index: 5;
+}
+.inp_chk_wrap {
+    position: relative;
+    overflow: hidden;
+}
+.inp_chk_wrap .inp_chk {
+    border: 0 !important;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 0;
+    height: 0;
+}
+.card_prima{
+    margin-top: 13px;
+}
+.card_prima .inp_chk_wrap .inp_chk + label {
+    padding-top: 2px;
+    font-size: 14px;
+    color: #333;
+}
+.card_primabox .inp_chk_wrap .inp_chk + label:before {
+    width: 17px;
+    height: 17px;
+    margin-top: -3px;
+    margin-right: 7px;
+    background: url(https://web.lpay.com:1452/resources/images/common/chx_sq_new.png) no-repeat 0 0;
+    background-size: 17px;
+}
+
+.card_primabox .inp_chk_wrap label::before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+}
+.card_primabox .primatxt{
+    margin-left: 24px;
+    margin-top: 5px;
+    line-height: 18px;
+}
+.card_primabox .primatxt span {
+    font-size: 12px;
+}
+
+.card_prima .fix_cau{
+    margin-top: 10px;
+}
+.line_cau ul {
+    padding-top: 10px;
+    border-top: 1px solid #dbdbdb;
+}
+.fix_cau li:first-child{
+    margin-top: 0;
+}
+.fix_cau li{
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 18px;
+    padding-left: 8px;
+    background: url(https://web.lpay.com:1452/resources/images/icon/bul_sq_gray.png) no-repeat 0 7px;
+    background-size: 3px;
+}
+.pofix{
+    position: fixed;
+    left: 0;bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+    overflow: hidden;
+    height: 80px;
+    background: #ffffff;
+    z-index: 999999;
+    box-sizing: border-box;
+}
+.pofix>div{
+    padding: 0 10px 10px;
+}
+.btnC ul {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.btnC li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+    width: 50%;
+}
+.pofix > div button {
+    width: 100%;
+    display: block;
+    background: #009bd7;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+}
+/*iframe용 css*/
+.assetPage{
+    display: none;
+    z-index: 99999;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.assetPage.active{
+    display: block;
+}
+.assetIframe{
+    display: none;
+    z-index: 100000;
+    width: 369px;
+    height: 611px;
+    background: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.assetIframe.active{
+    display: block;
+}
+.assetIframe iframe{
+    width: 100%;
+    height: 100%;
 }
