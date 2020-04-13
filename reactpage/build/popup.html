@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>//369X611 size</script>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header" class="headfix">
+            <div class="inwrap">
+                <p class="head_prev"><a href="#"><span class="blind">이전</span></a></p>
+                <h1 class="head_tit">
+                    은행계좌 추가
+                    <span class="head_caution">
+                        <span class="caution tooltip">도움말 보기</span>
+                    </span>
+                </h1>
+                <p class="head_close">
+                    <a href="#"><span class="blind">닫기</span></a>
+                </p>
+            </div>
+        </header>
+        <section id="container_popup">
+            <div id="contents">
+                <div class="conarea memarea mrbtn">
+                    <div class="conwrap">
+                        <fieldset>
+                            <legend>계좌정보입력</legend>
+                            <ul class="cardul addul">
+                                <li class="focusline">
+                                    <strong class="label"><label for="acno">계좌번호</label></strong>
+                                    <div class="inpbox"><input type="text" placeholder="계좌번호입력" name="bank_no" id="acno" class="inp_txt" minlength="10" maxlength="14" readonly></div>
+                                </li>
+                                <li class="focusline">
+                                    <strong class="label"><label for="pmtMthAlias">계좌별칭</label></strong>
+                                    <div class="inpbox"><input type="text" name="bank_nick" id="pmtMthAlias" placeholder="12자리 이하" maxlength="12" class="inp_txt focus" /></div>
+                                </li>
+                            </ul>
+                        <div class="card_prima">
+                            <div class="card_primabox">
+                                <div class="inp_chk_wrap">
+                                    <input type="checkbox" name="priorNum" id="priorNum" value="99" class="inp_chk">
+                                    <label for="priorNum">주결제수단으로 지정</label>
+                                </div>
+                                <div class="primatxt"><span>결제수단 관리화면에서 첫번째로 노출됩니다.</span></div>
+                                <div class="fix_cau line_cau">
+                                    <ul>
+                                        <li>은행계좌 정보는 은행을 통한 인증 후 별도로 저장하지 않습니다.</li>
+                                        <li>휴대폰 번호로 만든 평생계좌 및 가상계좌, 증권/펀드/적금 등의 계좌는 등록할 수 없습니다.</li>
+                                        <li>전자금융거래법 제 15조 1항에 따라 계좌 등록을 위해서는 출금 이체 동의가 필요합니다. [다음] 버튼을 클릭하실 경우 출금이체동의를 위한 ARS 동의 단계가 진행됩니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="pofix">
+                    <div class="btnC">
+                        <ul><li><button id="btnNext" class="btn01">다음</button></li></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+</body>
+</html>
