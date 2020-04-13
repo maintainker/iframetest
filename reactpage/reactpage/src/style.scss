@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul, ol,li{
+    list-style: none;
+}
+
+
+.title{
+    width: 600px;
+    padding: 100px 100px 100px 160px;
+}
+.title h1{
+    font-size: 50px;
+    text-align: center;
+}
+.title ul{
+    margin-top: 50px;
+    padding-left: 50px;
+}
+
+.postersFrame{
+    display: inline-block;
+    width: 800px;
+    padding-left: 100px;
+}
+
+.postersFrame > div{
+    position: relative;
+    width: 200px;
+    height: 285px;
+    background-color: red;
+    display: inline-block;
+    margin: 0 80px 50px 0;
+}
+.postersFrame > div:nth-child(3n){
+    margin-right: 0;
+}
+.postersFrame .poster img {
+    width: 100%;
+    height: 100%;
+}
+.postersFrame .poster .mover{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+}
+.postersFrame .poster .mover.basket{
+    z-index: 100;
+    color: springgreen;
+    display: block;
+}
+.postersFrame .poster .mover.basket .mover_circle{
+    border: 3px solid springgreen;
+}
+.postersFrame .poster .mover.basket .mover_circle span{
+    position: relative;
+    z-index: 1001;
+}
+.postersFrame .poster .mover.basket .count{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.postersFrame .poster .mover.basket:hover .count{
+    z-index: -2;
+    display: block;
+}
+.mover.basket .count div{
+    z-index: -2;
+    font-size: 40px;
+}
+.mover.basket .count .minus{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+.mover.basket .count .plus{
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    transform: translateY(-50%);
+}
+.mover.basket .count .countNum{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+.mover.basket .count .countNum span{
+
+    z-index: 1001;
+}
+
+.postersFrame .poster .mover.basket .mover_left{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+.postersFrame .poster .mover.basket .mover_left::before{
+    content: '';
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+.postersFrame .poster .mover.basket .mover_left:hover::before{
+    visibility: visible;
+}
+.postersFrame .poster .mover.basket .mover_right{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+}
+.postersFrame .poster .mover.basket .mover_right::before{
+    content: '';
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right:100%;
+    background-color: rgba(0,0,0,0.7);
+}
+.postersFrame .poster .mover.basket .mover_right:hover::before{
+    visibility: visible;
+}
+.postersFrame .poster:hover .mover{
+    display: block;
+}
+.postersFrame .poster .mover .mover_circle{
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    text-align: center;
+}
+.postersFrame .poster .mover .mover_circle span{
+    line-height: 100px;
+    font-size: 28px;
+}
+
+
+.cart {
+    width: calc(100% - 950px);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.cart .carthead {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(40,40,40);
+    color: white;
+}
+.cart .carthead span {
+    padding-left: 60px;
+    line-height: 100px;
+    font-size: 30px;
+}
+.cart .basket{
+    padding: 50px 70px 0 100px;
+    width: calc(100% - 170px);
+    height: calc(70vh - 150px);
+    color: #000000;
+}
+.cart .basket .list{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.cart .basket .list div:first-child{
+    width: 55%;
+    padding-left: 0;
+}
+.cart .basket .list div:nth-child(2){
+    width: 20%;
+}
+.cart .basket .list div{
+    display: inline-block;
+}
+.cart .cal {
+    width: 100%;
+    height: 30vh;
+    background-color: #ccc;
+}
+.cart .cal ul{
+    width: calc(100% - 100px);
+    padding: 20px 50px 20px 50px;
+}
+.cart .cal ul li{
+    height: 45px;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.cart .cal ul li div{
+    display: inline-block;
+    font-size: 25px;
+}
+.cart .cal ul li div:nth-child(2){
+    width: 20%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.total{
+    font-weight: bold;
+}
+.cart .cal a{
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin-left: 20px;
+    margin: 0 auto;
+    width: calc(100% - 40px);
+    height: 50px;
+    background-color: blue;
+}
