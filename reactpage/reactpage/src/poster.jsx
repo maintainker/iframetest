@@ -56,3 +56,4 @@ const PosterPage = ({changeBasket,poster}) =>{
 }
 
 export default PosterPage;
+
